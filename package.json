@@ -1,0 +1,17 @@
+{
+  "name": "wxngithubapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node .",
+    "installfetch": "npm install node-fetch@2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "express": "^4.18.1"
+  }
+}
