@@ -20,14 +20,16 @@ app.get('/*', function (req, res) {
         .then(json => {
             //console.log(json)
             let download_url = json.assets[0].browser_download_url;
+            let file_name = json.assets[0].name;
             let tag_name = json.tag_name;
             let name = json.name;
             let description = json.body;
             let jsonStr = `{
                 "download_url": "${download_url}",
+                "file_name": "${file_name}",
                 "tag_name": "${tag_name}",
                 "name": "${name}",
-                "description": "${description}"
+                "description": "empty"
             }`;
             let jsonObj = JSON.parse(jsonStr);
             res.send(jsonObj)
